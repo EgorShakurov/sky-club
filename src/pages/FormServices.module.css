@@ -1,0 +1,192 @@
+.formContainer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title {
+    margin-top: 15px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.formGroup {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+label {
+    margin: 0 0 5px 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"] {
+    font-size: 16px;
+}
+
+input {
+    padding: 0 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+}
+
+select {
+    height: 42px;
+    padding: 0 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.submitButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #4c94c5;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 42px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submitButton:hover {
+    background-color: rgb(207, 23, 23);
+}
+
+.errorText {
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 11px;
+}
+
+.inputError {
+    border-color: red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .title {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        font-size: 15px;
+    }
+
+    select {
+        font-size: 15px;
+    }
+
+    .errorText {
+        font-size: 13px;
+        bottom: -19px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .submitButton {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    form {
+        width: 360px;
+    }
+    .title {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        font-size: 14px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    .errorText {
+        font-size: 12px;
+        bottom: -18px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .submitButton {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+    form {
+        width: 360px;
+    }
+    .title {
+        font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        font-size: 13px;
+        height: 35px;
+    }
+
+    select {
+        font-size: 13px;
+        height: 37px;
+    }
+
+    .errorText {
+        font-size: 11px;
+        bottom: -16px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .submitButton {
+        font-size: 13px;
+        height: 37px;
+    }
+
+}
